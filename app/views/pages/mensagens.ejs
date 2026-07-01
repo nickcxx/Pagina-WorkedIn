@@ -1,35 +1,91 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <title>Mensagens - Workedin</title>
-  <link rel="stylesheet" href="../css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mensagens - Workedin</title>
+    <link rel="stylesheet" href="../css/style.css">
 </head>
+
 <body>
 
 <nav class="navbar">
-  <div class="logo">Workedin</div>
+    <div class="logo">Workedin</div>
 
- <ul class="nav-links">
-    <li><a href="/">🏠 Início</a></li>
-    <li><a href="/rede">👥 Rede</a></li>
-    <li><a href="/vagas">💼 Vagas</a></li>
-    <li><a href="/mensagens">💬 Mensagens</a></li>
-</ul>
+    <ul class="nav-links">
+        <li><a href="/">🏠 Início</a></li>
+        <li><a href="/rede">👥 Rede</a></li>
+        <li><a href="/vagas">💼 Vagas</a></li>
+        <li><a href="/mensagens" class="active">💬 Mensagens</a></li>
+    </ul>
 </nav>
 
-<div class="page">
-  <h1>Mensagens</h1>
+<div class="mensagens-container">
 
-  <div class="message-card">
-    <h3>Maria Souza</h3>
-    <p>Olá! Gostaria de conversar sobre uma oportunidade.</p>
-  </div>
+    <aside class="lista-conversas">
 
-  <div class="message-card">
-    <h3>Carlos Lima</h3>
-    <p>Você viu a nova vaga publicada?</p>
-  </div>
+        <h2>Conversas</h2>
+
+        <div class="contato ativo">
+            <img src="https://i.pravatar.cc/50?img=1">
+            <div>
+                <h4>Maria Silva</h4>
+                <p>Olá! Podemos conversar?</p>
+            </div>
+        </div>
+
+        <div class="contato">
+            <img src="https://i.pravatar.cc/50?img=5">
+            <div>
+                <h4>João Santos</h4>
+                <p>Obrigado pelo contato.</p>
+            </div>
+        </div>
+
+        <div class="contato">
+            <img src="https://i.pravatar.cc/50?img=8">
+            <div>
+                <h4>Empresa Tech</h4>
+                <p>Sua candidatura foi recebida.</p>
+            </div>
+        </div>
+
+    </aside>
+
+    <section class="chat">
+
+        <div class="chat-topo">
+            <img src="https://i.pravatar.cc/50?img=1">
+            <h3>Maria Silva</h3>
+        </div>
+
+        <div class="chat-corpo">
+
+            <div class="msg recebida">
+                Olá! Vi seu perfil e gostei bastante.
+            </div>
+
+            <div class="msg enviada">
+                Muito obrigado! Fico feliz.
+            </div>
+
+            <div class="msg recebida">
+                Temos uma vaga para Desenvolvedor Front-End.
+            </div>
+
+            <div class="msg enviada">
+                Tenho interesse. Podemos conversar.
+            </div>
+
+        </div>
+
+        <div class="chat-input">
+            <input type="text" placeholder="Digite uma mensagem...">
+            <button>Enviar</button>
+        </div>
+
+    </section>
+
 </div>
 
 </body>

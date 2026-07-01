@@ -1,38 +1,77 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <title>Vagas - Workedin</title>
-  <link rel="stylesheet" href="../css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vagas - Workedin</title>
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
 
-<nav class="navbar">
-  <div class="logo">Workedin</div>
+    <nav class="navbar">
+        <div class="logo">Workedin</div>
 
-  <ul class="nav-links">
-    <li><a href="/">🏠 Início</a></li>
-    <li><a href="/rede">👥 Rede</a></li>
-    <li><a href="/vagas">💼 Vagas</a></li>
-    <li><a href="/mensagens">💬 Mensagens</a></li>
-</ul>
-</nav>
+        <ul class="nav-links">
+            <li><a href="/">🏠 Início</a></li>
+            <li><a href="/rede">👥 Rede</a></li>
+            <li><a href="/vagas" class="active">💼 Vagas</a></li>
+            <li><a href="/mensagens">💬 Mensagens</a></li>
+        </ul>
+    </nav>
 
-<div class="page">
-  <h1>Vagas em Destaque</h1>
+    <section class="banner-vagas">
+        <h1>Encontre sua próxima oportunidade</h1>
+        <p>Milhares de empresas procurando profissionais como você.</p>
 
-  <div class="job-card">
-    <h3>Front-End Developer</h3>
-    <p>Empresa Tech Solutions</p>
-    <button>Candidatar-se</button>
-  </div>
+        <div class="pesquisa">
+            <input type="text" placeholder="Cargo, empresa ou tecnologia">
+            <button>Pesquisar</button>
+        </div>
+    </section>
 
-  <div class="job-card">
-    <h3>UI/UX Designer</h3>
-    <p>Creative Studio</p>
-    <button>Candidatar-se</button>
-  </div>
-</div>
+    <main class="container-vagas">
+
+        <div class="vaga-card">
+            <h2>Desenvolvedor Front-End</h2>
+            <p><strong>Empresa:</strong> Tech Solutions</p>
+            <p><strong>Local:</strong> Remoto</p>
+            <p><strong>Salário:</strong> R$ 5.500 - R$ 7.000</p>
+
+            <p>
+                Procuramos desenvolvedor com experiência em HTML, CSS,
+                JavaScript e React.
+            </p>
+
+            <button>Candidatar-se</button>
+        </div>
+
+        <div class="vaga-card">
+            <h2>Desenvolvedor Back-End</h2>
+            <p><strong>Empresa:</strong> DevCompany</p>
+            <p><strong>Local:</strong> São Paulo</p>
+            <p><strong>Salário:</strong> R$ 7.000 - R$ 10.000</p>
+
+            <p>
+                Conhecimento em Node.js, Express, APIs REST e Banco de Dados.
+            </p>
+
+            <button>Candidatar-se</button>
+        </div>
+
+        <div class="vaga-card">
+            <h2>UX/UI Designer</h2>
+            <p><strong>Empresa:</strong> Creative Studio</p>
+            <p><strong>Local:</strong> Híbrido</p>
+            <p><strong>Salário:</strong> R$ 4.500 - R$ 6.000</p>
+
+            <p>
+                Experiência com Figma, Design Systems e Prototipagem.
+            </p>
+
+            <button>Candidatar-se</button>
+        </div>
+
+    </main>
 
 </body>
 </html>
